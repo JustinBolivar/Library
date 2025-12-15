@@ -32,6 +32,6 @@ public class Book {
     
     @Override
     public String toString() {
-        return "Title: " + this.title + ", Author: " + this.author + " Year Published: " + this.yearPublished + " isRented: " + this.isRented;
+        return "Title: " + this.title + ", Author: " + this.author + " Year Published: " + this.yearPublished;
     }
 }

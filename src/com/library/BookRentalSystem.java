@@ -32,7 +32,28 @@ public class BookRentalSystem {
     public void rentBooks(final int index) {
         library.get(index).rent();
     }
-
+    
+    public int getBookLength() {
+        return library.size();
+    }
+    
+    public void AddBook(Book x) {
+        library.add(x);
+    }
+    
+    public void clearLibrary() {
+        library.clear();
+    }
+    
+    public boolean isBookRented(int index) {
+        return library.get(index).isRented();
+    }
+    
+    public void displayBooks() {
+        for (Book book : library) {
+            System.out.println(book); 
+        }
+    }
     /**
      * Main Function.
      * @param args

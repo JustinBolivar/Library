@@ -1,8 +1,14 @@
 package com.library;
 
 public class FictionBook extends Book {
-
-    public FictionBook(String title, String author, int yearPublished) {
+    /***
+     * This is the Fiction Book Constructor.
+     * @param title
+     * @param author
+     * @param yearPublished
+     */
+    public FictionBook(final String title, final String author,
+            final int yearPublished) {
         super(title, author, yearPublished);
     }
 

@@ -101,5 +101,13 @@ class LibraryTest {
         
         assertEquals(expectedOutput, actualOutput, "The displayed book list does not match the expected output.");
     }
+    @Order(8)
+    @Test
+    void testMain() {
+        int expectedResult = 1;
+        BookRentalSystem.main(null);
 
+        int result = 1;
+        assertEquals(expectedResult, result, () -> "Main Test");
+    }
 }

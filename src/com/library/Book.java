@@ -33,13 +33,6 @@ public class Book {
         isRented = false;
     }
     /***
-     * This is the getter for the field title.
-     * @return title
-     */
-    public String getTitle() {
-        return title;
-    }
-    /***
      * this is the getter for the field isRented.
      * @return isRented
      */

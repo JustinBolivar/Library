@@ -17,7 +17,6 @@ public class Book {
      * This is the boolean is Rented field that shows if a book is rented.
      */
     private boolean isRented;
-
     /***
      * This is the Parent Book constructor.
      * @param thisTitle
@@ -51,6 +50,7 @@ public class Book {
     @Override
     public String toString() {
         return "Title: " + this.title + ", Author: " + this.author
-                + ", Year Published: " + this.yearPublished + ", Rented: " + this.isRented;
+                + ", Year Published: " + this.yearPublished + ", Rented: "
+                + this.isRented;
     }
 }

@@ -25,6 +25,7 @@ public class BookRentalSystem {
         library.add(new NonFictionBook("Guns, Germs, and Steel",
                 "Jared Diamond ", year4));
     }
+
     /**
      * Function to rent a book.
      * @param index
@@ -32,28 +33,48 @@ public class BookRentalSystem {
     public void rentBooks(final int index) {
         library.get(index).rent();
     }
-    
+
+    /**
+     * Method to get the length of the library.
+     * @return the size of the library.
+     */
     public int getBookLength() {
         return library.size();
     }
-    
-    public void AddBook(Book x) {
+
+    /**
+     * Method to add a book into the library.
+     * @param x
+     */
+    public void addBook(final Book x) {
         library.add(x);
     }
-    
+
+    /**
+     * Method to clear the library of its contents.
+     */
     public void clearLibrary() {
         library.clear();
     }
-    
-    public boolean isBookRented(int index) {
+
+    /**
+     * Method to rent a book and set its isRented field to true.
+     * @param index
+     * @return call the isRented method to set the field true using the get
+     *         method.
+     */
+    public boolean isBookRented(final int index) {
         return library.get(index).isRented();
     }
-    
+    /**
+     * Method to display the books in the library.
+     */
     public void displayBooks() {
         for (Book book : library) {
-            System.out.println(book); 
+            System.out.println(book);
         }
     }
+
     /**
      * Main Function.
      * @param args

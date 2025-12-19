@@ -2,7 +2,7 @@ package com.library;
 
 public class NonFictionBook extends Book {
     /**
-     * Constructor for NonFIction book.
+     * Constructor for NonFiction book.
      * @param title
      * @param author
      * @param yearPublished
